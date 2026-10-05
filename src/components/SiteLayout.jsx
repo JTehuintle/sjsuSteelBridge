@@ -31,7 +31,7 @@ function Header({ gallery }) {
 }
 
 function Footer({ gallery }) {
-  return <footer><div className="footer-inner wrap"><Brand footer />{gallery ? <Link className="gallery-back" to="/">← Back to project</Link> : <span>Made by the team, for the next team. <b>↗</b></span>}<small>{gallery ? 'Fabrication documentation · San José State University' : 'Fabrication documentation · Replace bracketed placeholders before submission.'}</small></div></footer>;
+  return <footer><div className="footer-inner wrap"><Brand footer />{gallery ? <Link className="gallery-back" to="/">← Back to project</Link> : <span>Made by the team, for the next team. <b>↗</b></span>}<small>{gallery ? 'Fabrication documentation · San José State University' : 'Fabrication documentation '}</small></div></footer>;
 }
 
 export default function SiteLayout() {
