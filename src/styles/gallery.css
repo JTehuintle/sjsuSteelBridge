@@ -10,7 +10,7 @@
 .gallery-section-heading>p{margin:0;max-width:420px;color:var(--muted);font-size:.88rem}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
 .gallery-card{background:#fff;border:1px solid var(--line);min-width:0}
-.gallery-card>img,.gallery-empty{display:block;width:100%;height:230px;object-fit:cover;background:#e9edeb}
+.gallery-card>img,.gallery-empty{display:block;width:100%;height:230px;object-fit:cover;object-position:center;background:#e9edeb}
 .gallery-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;color:#a77b2d;background:linear-gradient(135deg,#e9edeb,#f3f3ef);border-bottom:1px solid var(--line)}
 .gallery-empty span{font:1.8rem 'DM Sans',sans-serif}
 .gallery-empty small{font:.58rem var(--mono);letter-spacing:.14em;color:#71808a}
