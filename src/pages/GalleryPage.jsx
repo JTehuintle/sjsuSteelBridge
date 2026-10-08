@@ -15,6 +15,12 @@ const weldingPhotos = [
   ['IMG_8040.jpg', 'Side-by-side welds', 'Two welders working the same line at once', 'Two team members welding along a steel truss'],
 ];
 
+const midPacPhotos = [
+  ['DSCF3936.JPG', 'PM and Advisor?', 'The SJSU Steel Bridge team at MidPac 2026', 'SJSU Steel Bridge team posing for a group photo'],
+  
+
+];
+
 const nationalsPhotos = [
   ['DSCF4565.jpg', 'Team huddle', 'Checking notes before the next move on the floor', 'SJSU Steel Bridge teammates gathered indoors at nationals'],
   ['DSCF4566.jpg', 'Display board', 'The San José State poster at ASCE Steel Bridge 2026', 'SJSU steel bridge competition display board'],
@@ -81,7 +87,9 @@ export default function GalleryPage() {
 
     <GallerySection index="02 / ARCHIVE" titleId="midpac-title" title="MidPac" intro="Regional competition photos are still being gathered. This section is a work in progress.">
       <div className="gallery-grid">
-        <PhotoCard number="01" title="Photos coming soon" caption="MidPac shots will land here once they are sorted and added." stamp="WIP" />
+        {numbered(midPacPhotos, 'MidPac').map((photo) => (
+          <PhotoCard key={photo.src} {...photo} stamp="ARCHIVE" />
+        ))}
       </div>
     </GallerySection>
 

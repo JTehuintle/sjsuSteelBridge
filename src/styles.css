@@ -21,6 +21,8 @@
 .hero-art {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  justify-self: center;
 }
 .hero-photo {
   position: absolute;
